@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+.RoleHero-container {
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #fcfcfc;
+  padding: 80px;
+  font-family: "Inter", sans-serif;
+}
+
+.RoleHero-content {
+  max-width: 800px;
+}
+
+.RoleHero-title {
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #050505;
+  margin: 0 0 24px 0;
+  letter-spacing: -0.03em;
+}
+
+.RoleHero-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #4a4a4a;
+  margin: 0;
+  max-width: 650px;
+}
+
+@media (max-width: 768px) {
+  .RoleHero-container {
+    padding: 15% 5%;
+    min-height: auto;
+  }
+
+  .RoleHero-title {
+    font-size: 3rem;
+  }
+
+  .RoleHero-description {
+    font-size: 1rem;
+  }
+}

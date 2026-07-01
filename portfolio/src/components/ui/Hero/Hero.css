@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Poppins:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+.hero-container {
+  min-height: 80vh;
+  background-color: #050505;
+  background-image: radial-gradient(
+    circle at 80% 20%,
+    rgba(60, 20, 60, 0.4),
+    transparent 40%
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 5vw 8vw;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  justify-content: flex-end;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 0;
+  color: #e0e0e0;
+  font-family: "Inter", sans-serif;
+
+  transition:
+    transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    text-shadow 0.4s ease;
+  cursor: default;
+}
+
+.hero-subtitle:hover {
+  transform: translateY(-10px) scale(1.02);
+  text-shadow: 0px 15px 30px rgba(255, 255, 255, 0.2);
+}
+
+.hero-subtitle-inner {
+  display: inline-block;
+  width: 100%;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.hero-subtitle-inner.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-subtitle-inner.fade-out {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.hero-subtitle strong {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.hero-title {
+  font-size: clamp(4rem, 15vw, 14rem);
+  line-height: 0.8;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 1vw;
+  cursor: default;
+
+  /* Persiapan untuk efek animasi */
+  transition:
+    transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    text-shadow 0.4s ease;
+}
+
+/* --- EFEK ANIMASI SAAT KURSOR MENDEKAT (HOVER) --- */
+.hero-title:hover {
+  transform: translateY(-10px) scale(1.02); /* Teks sedikit naik dan membesar */
+  text-shadow: 0px 15px 30px rgba(255, 255, 255, 0.2); /* Efek cahaya (glow) */
+}
+
+.text-hi {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: -2px; /* Merapatkan jarak huruf */
+}
+
+.text-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  letter-spacing: -5px; /* Teks nama yang saling menempel rapat */
+}

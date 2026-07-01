@@ -1,0 +1,103 @@
+/* src/components/ui/SpecializedRole.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+.specialized-section {
+  background-color: #ffffff; 
+  color: #050505;
+  padding: 8vw 5vw;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+}
+
+.specialized-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* --- JUDUL UTAMA --- */
+.main-heading {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  margin-bottom: 4rem;
+  color: #000000;
+}
+
+/* --- GRID LAYOUT --- */
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 4rem 3rem; 
+}
+
+/* --- KARTU ROLE --- */
+.role-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 24px;
+
+  border-radius: 10px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.role-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 0 0 2px #000;
+}
+
+.role-title {
+  font-size: clamp(1.5rem, 2vw, 1.8rem);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.role-description {
+  font-size: 1.05rem;
+  color: #52525b; 
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+  font-weight: 400;
+}
+
+/* --- LINK BUTTON --- */
+.view-link {
+  margin-top: auto; 
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: opacity 0.2s ease;
+}
+
+.view-link:hover {
+  opacity: 0.6;
+}
+
+/* --- RESPONSIVE UNTUK TABLET & HP --- */
+@media (max-width: 1024px) {
+  .roles-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 Kolom untuk Tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .roles-grid {
+    grid-template-columns: 1fr; /* 1 Kolom untuk HP */
+    gap: 3rem;
+  }
+
+  .specialized-section {
+    padding: 10vw 6vw;
+  }
+}

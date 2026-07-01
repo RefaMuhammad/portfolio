@@ -1,0 +1,28 @@
+.RoleHero-container {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 10%;
+  background-color: #050505;
+}
+
+.RoleHero-content {
+  max-width: 800px;
+}
+
+.RoleHero-title {
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+  letter-spacing: -0.03em;
+}
+
+.RoleHero-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #888888;
+  margin: 0;
+  max-width: 650px;
+}

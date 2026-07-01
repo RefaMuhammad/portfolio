@@ -1,0 +1,9 @@
+.container-profile {
+  /* Mengatur radius tumpul hanya untuk bawah kiri dan bawah kanan */
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: black;
+
+  background-color: black;
+  overflow: hidden;
+}

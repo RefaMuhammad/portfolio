@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+
+.footer-container {
+  /* Default Theme (Light) */
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --secondary-text: #52525b;
+  --copyright-color: #71717a;
+  --icon-bg: #f4f4f5;
+  --icon-color: #000000;
+  --icon-hover-bg: #000000;
+  --icon-hover-color: #ffffff;
+  --button-bg: #000000;
+  --button-color: #ffffff;
+
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5vw;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* ============================= */
+/* DARK THEME */
+/* ============================= */
+
+.footer-container.dark {
+  --bg-color: #050505;
+  --text-color: #ffffff;
+  --secondary-text: #d4d4d8;
+  --copyright-color: #9ca3af;
+  --icon-bg: #18181b;
+  --icon-color: #ffffff;
+  --icon-hover-bg: #ffffff;
+  --icon-hover-color: #000000;
+  --button-bg: #ffffff;
+  --button-color: #000000;
+}
+
+/* ============================= */
+/* TOP */
+/* ============================= */
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* LEFT */
+
+.footer-left h2 {
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0 0 2rem;
+  letter-spacing: -1px;
+  color: var(--text-color);
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 2rem;
+}
+
+.icon-box {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  background: var(--icon-bg);
+  color: var(--icon-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-size: 1.2rem;
+
+  transition: all 0.3s ease;
+}
+
+.icon-box:hover {
+  background: var(--icon-hover-bg);
+  color: var(--icon-hover-color);
+  transform: translateY(-3px);
+}
+
+.copyright {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--copyright-color);
+  margin: 0;
+}
+
+/* ============================= */
+/* RIGHT */
+/* ============================= */
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-right h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 0 1.5rem;
+  letter-spacing: 1px;
+  color: var(--text-color);
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.footer-nav a {
+  color: var(--secondary-text);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+/* ============================= */
+/* BOTTOM */
+/* ============================= */
+
+.footer-bottom {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.giant-text {
+  font-size: clamp(6rem, 21vw, 25rem);
+  font-weight: 900;
+  color: var(--text-color);
+  margin: 0;
+  line-height: 0.75;
+  letter-spacing: -1vw;
+  text-align: center;
+}
+
+.back-to-top {
+  position: absolute;
+  right: 0;
+  bottom: 1vw;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--button-bg);
+  color: var(--button-color);
+
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+  z-index: 10;
+}
+
+.back-to-top:hover {
+  transform: translateY(-5px);
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .footer-right,
+  .footer-nav {
+    align-items: flex-start;
+  }
+
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    bottom: 5vw;
+  }
+}

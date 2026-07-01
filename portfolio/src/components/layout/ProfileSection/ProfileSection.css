@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Playfair+Display:ital@1&display=swap");
+
+.profile-section {
+  position: relative;
+  min-height: 70vh;
+  background-color: #000000; /* BERUBAH: Putih jadi Hitam */
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+  color: #ffffff; /* BERUBAH: Hitam jadi Putih */
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 120px;
+  z-index: 10;
+}
+
+.bg-text-profile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  font-size: clamp(6rem, 21vw, 22.5rem);
+  font-weight: 900;
+  color: #121214; /* BERUBAH: Dari abu-abu terang ke abu-abu sangat gelap agar tetap samar di bg hitam */
+  z-index: 0;
+  white-space: nowrap;
+  letter-spacing: -1.5vw;
+  pointer-events: none;
+}
+
+.profile-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  gap: 8vw;
+}
+
+/* --- KOLOM KIRI --- */
+.profile-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subtitle {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #a1a1aa; /* BERUBAH: Menjadi abu-abu terang agar terbaca di bg hitam */
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: clamp(4rem, 8vw, 8rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -4px;
+  margin: 0 0 1.5rem 0;
+}
+
+.role {
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin: 0 0 2rem 0;
+  color: #e5e5e5; /* BERUBAH: Menjadi putih gading agar kontras */
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.cv-btn:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.connect-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff; /* BERUBAH: Tombol jadi Putih */
+  color: #000000; /* BERUBAH: Teks tombol jadi Hitam */
+  padding: 14px 28px;
+  border-radius: 50px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.connect-btn:hover {
+  background-color: #e5e5e5; /* BERUBAH: Hover tombol putih menjadi abu-abu terang */
+  transform: translateY(-2px);
+}
+
+.arrow-icon {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* --- KOLOM KANAN --- */
+.profile-right {
+  flex: 1.2;
+}
+
+.profile-right p {
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.8;
+  color: #e4e4e7; /* BERUBAH: Teks paragraf menjadi abu-abu terang yang lembut di mata */
+  margin: 0;
+}
+
+.highlight-laravel {
+  color: #ff2d20; /* Tetap merah (warna brand) */
+  font-weight: 500;
+}
+
+.highlight-nextjs {
+  color: #3b82f6; /* DISESUAIKAN: Biru Next.js sedikit diterangkan agar menyala di bg hitam */
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .profile-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+
+  .title {
+    letter-spacing: -2px;
+  }
+}

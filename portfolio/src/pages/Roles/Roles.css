@@ -1,0 +1,107 @@
+/* ====================
+   ROLE HERO STYLES
+   ==================== */
+.hero-container-dark {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 10%;
+  background-color: #050505;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-title-dark {
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+  letter-spacing: -0.03em;
+}
+
+.hero-description-dark {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #a0a0a0;
+  margin: 0;
+  max-width: 650px;
+}
+
+/* ====================
+   TECH STACK STYLES
+   ==================== */
+.tech-stack-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 10%;
+  background-color: #050505;
+}
+
+.tech-stack-content {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.pill-badge {
+  display: inline-block;
+  background-color: #222222;
+  color: #e0e0e0;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 60px;
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 0;
+}
+
+.tech-item {
+  flex: 1;
+  min-width: 250px;
+  border-left: 1px solid #333333;
+  padding-left: 24px;
+}
+
+.tech-icon {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.tech-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+}
+
+.tech-detail {
+  font-size: 0.9rem;
+  color: #888888;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-title-dark {
+    font-size: 3rem;
+  }
+  .tech-item {
+    border-left: none;
+    border-top: 1px solid #333333;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  .tech-grid {
+    flex-direction: column;
+  }
+}
