@@ -27,11 +27,7 @@
   transform: translate(-50%, -50%) !important;
   font-size: clamp(6rem, 21vw, 22.5rem);
   font-weight: 900;
-<<<<<<< HEAD
   color: #121214;
-=======
-  color: #121214; 
->>>>>>> 6c8b6299c18117da66f99e515fc95ac67e70d429
   z-index: 0;
   white-space: nowrap;
   letter-spacing: -1.5vw;
@@ -61,11 +57,7 @@
   font-family: "Playfair Display", serif;
   font-style: italic;
   font-size: 1.2rem;
-<<<<<<< HEAD
   color: #a1a1aa;
-=======
-  color: #a1a1aa; 
->>>>>>> 6c8b6299c18117da66f99e515fc95ac67e70d429
   margin-bottom: 1rem;
 }
 
@@ -120,11 +112,7 @@
   align-items: center;
   gap: 8px;
   background-color: #ffffff;
-<<<<<<< HEAD
   color: #000000;
-=======
-  color: #000000; 
->>>>>>> 6c8b6299c18117da66f99e515fc95ac67e70d429
   padding: 14px 28px;
   border-radius: 50px;
   border: none;
@@ -135,11 +123,7 @@
 }
 
 .connect-btn:hover {
-<<<<<<< HEAD
   background-color: #e5e5e5;
-=======
-  background-color: #e5e5e5; 
->>>>>>> 6c8b6299c18117da66f99e515fc95ac67e70d429
   transform: translateY(-2px);
 }
 
@@ -156,11 +140,7 @@
 .profile-right p {
   font-size: clamp(1rem, 1.5vw, 1.15rem);
   line-height: 1.8;
-<<<<<<< HEAD
   color: #e4e4e7;
-=======
-  color: #e4e4e7; 
->>>>>>> 6c8b6299c18117da66f99e515fc95ac67e70d429
   margin: 0;
 }
 
@@ -170,11 +150,7 @@
 }
 
 .highlight-nextjs {
-<<<<<<< HEAD
   color: #3b82f6;
-=======
-  color: #3b82f6; 
->>>>>>> 6c8b6299c18117da66f99e515fc95ac67e70d429
   font-weight: 500;
 }
 
@@ -182,7 +158,7 @@
   .profile-section {
     padding: 24px;
   }
-  
+
   .profile-content {
     flex-direction: column;
     align-items: flex-start;
