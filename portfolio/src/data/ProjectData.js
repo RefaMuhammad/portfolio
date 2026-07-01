@@ -1,7 +1,7 @@
 import floodSightImage from "../assets/images/projects/Floodsight.jpg";
 import Organify from "../assets/images/projects/Organify.jpeg";
 import SendThePicture from "../assets/images/projects/SendThePicture.png";
-import ScannerVIN from "../assets/image/projects/Scanner_VIN.jpeg";
+import ScannerVIN from "../assets/images/projects/Scanner_VIN.jpeg";
 
 const projectsData = [
   {
