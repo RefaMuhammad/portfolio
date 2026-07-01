@@ -9,7 +9,7 @@ const educationData = [
     id: 2,
     date: "2019 - 2022",
     school: "SMAN SITURAJA",
-    major: "IPA",
+    major: "Science",
   },
 ];
 
