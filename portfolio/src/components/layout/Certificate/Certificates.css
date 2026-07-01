@@ -1,6 +1,6 @@
 .cert-section {
   position: relative;
-  background: #ffffff; /* BERUBAH: Hitam jadi Putih */
+  background: #000000;
   padding: 6rem 1.5rem;
   overflow: hidden;
 }
@@ -18,8 +18,7 @@
   font-size: 6rem;
   font-weight: 800;
   line-height: 0.9;
-  color: rgba(0, 0, 0, 0.04); /* BERUBAH: Transparansi putih jadi hitam */
-  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.08);
   pointer-events: none;
   user-select: none;
   margin-top: 24px;
@@ -40,7 +39,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* BERUBAH */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding-bottom: 1.5rem;
   margin-bottom: 3rem;
 }
@@ -66,11 +65,11 @@
 }
 
 .cert-title-solid {
-  color: #000000; /* BERUBAH: Putih jadi Hitam */
+  color: #ffffff;
 }
 
 .cert-title-ghost {
-  color: rgba(0, 0, 0, 0.35); /* BERUBAH */
+  color: rgba(255, 255, 255, 0.35);
 }
 
 .cert-eyebrow {
@@ -78,12 +77,7 @@
   font-size: 0.7rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* BERUBAH: Sedikit ditebalkan opasitasnya agar mudah dibaca */
+  color: rgba(255, 255, 255, 0.5);
 }
 
 @media (min-width: 768px) {
@@ -113,8 +107,8 @@
 .cert-card {
   position: relative;
   text-align: left;
-  background: rgba(0, 0, 0, 0.02); /* BERUBAH */
-  border: 1px solid rgba(0, 0, 0, 0.1); /* BERUBAH */
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
   padding: 1.25rem;
   cursor: pointer;
@@ -125,8 +119,8 @@
 }
 
 .cert-card:hover {
-  border-color: rgba(0, 0, 0, 0.3); /* BERUBAH */
-  background: rgba(0, 0, 0, 0.05); /* BERUBAH */
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .cert-thumb {
@@ -134,9 +128,9 @@
   aspect-ratio: 4 / 3;
   overflow: hidden;
   border-radius: 0.75rem;
-  border: 1px solid rgba(0, 0, 0, 0.1); /* BERUBAH */
+  border: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 1rem;
-  background: #f4f4f5; /* BERUBAH: Jadi abu-abu sangat terang agar image placeholder terlihat rapi */
+  background: #1a1a1a;
 }
 
 .cert-thumb img {
@@ -154,7 +148,7 @@
   font-size: 0.7rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.5); /* BERUBAH */
+  color: rgba(255, 255, 255, 0.5);
   margin: 0 0 0.25rem;
 }
 
@@ -162,13 +156,13 @@
   font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.3;
-  color: #000000; /* BERUBAH: Putih jadi Hitam */
+  color: #ffffff;
   margin: 0 0 0.25rem;
 }
 
 .cert-id {
   font-size: 0.8rem;
-  color: rgba(0, 0, 0, 0.5); /* BERUBAH */
+  color: rgba(255, 255, 255, 0.5);
   margin: 0;
 }
 
@@ -176,12 +170,12 @@
   position: absolute;
   top: 1.25rem;
   right: 1.25rem;
-  color: rgba(0, 0, 0, 0.3); /* BERUBAH */
+  color: rgba(255, 255, 255, 0.3);
   transition: color 0.2s ease;
 }
 
 .cert-card:hover .cert-arrow {
-  color: #000000; /* BERUBAH */
+  color: #ffffff;
 }
 
 .cert-overlay {
@@ -191,12 +185,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* BERUBAH: Latar belakang pop-up jadi putih transparan */
+  background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(4px);
   padding: 1.5rem;
 }
@@ -205,8 +194,8 @@
   position: relative;
   max-width: 48rem;
   width: 100%;
-  background: #ffffff; /* BERUBAH: Modal jadi Putih */
-  border: 1px solid rgba(0, 0, 0, 0.1); /* BERUBAH */
+  background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
   padding: 1.5rem;
   max-height: 90vh;
@@ -220,8 +209,8 @@
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
-  background: #000000; /* BERUBAH: Tombol close jadi Hitam */
-  color: #ffffff; /* BERUBAH: Ikon close (X) jadi Putih */
+  background: #ffffff;
+  color: #000000;
   border: none;
   font-weight: 700;
   font-size: 1.1rem;
@@ -234,20 +223,20 @@
 .cert-modal-image {
   width: 100%;
   border-radius: 0.75rem;
-  border: 1px solid rgba(0, 0, 0, 0.1); /* BERUBAH */
+  border: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 1rem;
 }
 
 .cert-modal-title {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #000000; /* BERUBAH: Putih jadi Hitam */
+  color: #ffffff;
   margin: 0 0 0.25rem;
 }
 
 .cert-modal-meta {
   font-size: 0.85rem;
-  color: rgba(0, 0, 0, 0.5); /* BERUBAH */
+  color: rgba(255, 255, 255, 0.5);
   margin: 0 0 1.25rem;
 }
 
@@ -255,11 +244,17 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: #000000; /* BERUBAH: Tombol jadi Hitam */
-  color: #ffffff; /* BERUBAH: Teks tombol jadi Putih */
+  background: #ffffff;
+  color: #000000;
   font-size: 0.85rem;
   font-weight: 600;
   padding: 0.6rem 1.25rem;
   border-radius: 9999px;
   text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cert-verify-btn:hover {
+  background: #98cbff;
+  color: #000000;
 }

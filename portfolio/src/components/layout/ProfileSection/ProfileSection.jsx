@@ -46,7 +46,6 @@ const ProfileSection = () => {
     };
   }, []);
 
-  // Ganti role setiap 5 detik
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentRole((prev) => (prev + 1) % expertiseData.length);
@@ -55,7 +54,6 @@ const ProfileSection = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Refresh AOS ketika role berubah
   useEffect(() => {
     AOS.refresh();
   }, [currentRole]);

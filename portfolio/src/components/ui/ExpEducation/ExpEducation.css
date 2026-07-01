@@ -1,0 +1,339 @@
+/* =========================================
+   BASE STYLING & WATERMARK
+   ========================================= */
+.exp-education {
+  position: relative;
+  background-color: #ffffff;
+  padding: 6rem 1.5rem;
+  overflow: hidden;
+  z-index: 10;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+@media (min-width: 768px) {
+  .exp-education {
+    padding: 6rem 4rem;
+  }
+}
+
+.exp-education-watermark {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 0.9;
+  color: rgba(0, 0, 0, 0.05);
+  pointer-events: none;
+  user-select: none;
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  .exp-education-watermark {
+    font-size: 9rem;
+  }
+}
+
+.exp-container {
+  position: relative;
+  z-index: 1;
+}
+
+.exp-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0);
+  padding-bottom: 1.5rem;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 0.95;
+}
+
+@media (min-width: 768px) {
+  .exp-title {
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: 4rem;
+  }
+}
+
+/* =========================================
+   BAGIAN EXPERIENCE (ACCORDION)
+   ========================================= */
+.exp-education-content {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000;
+  background-color: transparent;
+  border-bottom: 1px solid #333;
+  padding: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.exp-education-content:hover {
+  background-color: #1a1a1a;
+  border-bottom-color: transparent;
+  color: #ffffff;
+}
+
+.exp-education-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Tanggal (Kiri) */
+.exp-education-header p:first-child {
+  font-family: monospace;
+  color: #a0a0a0;
+  font-size: 0.9rem;
+  min-width: 150px;
+  white-space: nowrap; /* Menjaga tanggal tetap sejajar mendatar */
+  flex-shrink: 0; /* Mencegah tanggal terdesak oleh judul */
+  margin: 0;
+}
+
+/* Posisi / Title (Tengah) */
+.exp-education-header h1 {
+  flex-grow: 1;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Nama Perusahaan (Kanan) */
+.exp-education-header p:last-child {
+  color: #6f6f6f;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.exp-education-content:hover .exp-education-header p:first-child,
+.exp-education-content:hover .exp-education-header p:last-child {
+  color: #ffffff;
+}
+
+/* Icon (+) */
+.exp-education-header p:last-child::after {
+  content: "+";
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Icon (+) berubah jadi (x) saat di-hover */
+.exp-education-content:hover .exp-education-header p:last-child::after {
+  transform: rotate(45deg);
+}
+
+/* Menyembunyikan Deskripsi secara default */
+.exp-education-description {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.4s ease-out,
+    opacity 0.3s ease,
+    margin-top 0.3s ease;
+}
+
+.exp-education-description p {
+  color: #a0a0a0;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Memunculkan Deskripsi saat container utama di-hover */
+.exp-education-content:hover .exp-education-description {
+  max-height: 300px;
+  opacity: 1;
+  margin-top: 20px;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+@media (max-width: 992px) {
+  .exp-education-content {
+    padding: 30px;
+  }
+
+  .exp-education-header {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 12px 20px;
+    align-items: start;
+  }
+
+  .exp-education-header p:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .exp-education-header h1 {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 1.7rem;
+  }
+
+  .exp-education-header p:last-child {
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.95rem;
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+@media (max-width: 768px) {
+  .exp-education-content {
+    padding: 24px 20px;
+  }
+
+  .exp-education-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .exp-education-header p:first-child {
+    min-width: auto;
+    width: auto;
+    font-size: 0.8rem;
+  }
+
+  .exp-education-header h1 {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .exp-education-header p:last-child {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 0.9rem;
+  }
+
+  .exp-education-description p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+@media (max-width: 480px) {
+  .exp-education-content {
+    padding: 20px 16px;
+  }
+
+  .exp-education-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .exp-education-header p:first-child {
+    font-size: 0.75rem;
+  }
+
+  .exp-education-header p:last-child {
+    font-size: 0.8rem;
+  }
+
+  .exp-education-header p:last-child::after {
+    font-size: 1.2rem;
+  }
+
+  .exp-education-description p {
+    font-size: 0.85rem;
+  }
+}
+
+/* =========================================
+   BAGIAN EDUCATION (KOTAK GHOST CURSOR)
+   ========================================= */
+.education-container {
+  padding: 20px 0;
+  color: #000000;
+  margin-top: 50px;
+}
+
+/* Kotak Pendidikan (Background Abu-abu/Putih) */
+.edu-card-content {
+  position: relative; /* PENTING: Untuk GhostCursor */
+  overflow: hidden; /* PENTING: Membatasi area GhostCursor agar tidak melebar */
+  background-color: #f2f2f2;
+  color: #000000;
+  border-radius: 12px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Teks Pendidikan (Z-Index dinaikkan agar kursor ada di bawah teks) */
+.edu-card-left,
+.edu-card-right {
+  position: relative;
+  z-index: 10;
+  pointer-events: none; /* PENTING: Membiarkan interaksi hover tembus ke GhostCursor */
+}
+
+/* Bagian Kiri (Tanggal & Kampus) */
+.edu-card-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edu-date {
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #444444;
+}
+
+.edu-school {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Arial Black", Impact, sans-serif;
+  letter-spacing: -1px;
+}
+
+/* Bagian Kanan (Jurusan) */
+.edu-card-right {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Responsif untuk Layar HP */
+@media (max-width: 768px) {
+  .edu-card-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .edu-school {
+    font-size: 1.5rem;
+  }
+}
