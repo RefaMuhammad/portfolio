@@ -88,11 +88,12 @@ const Roles = () => {
               opacity: techOpacity,
               y: techY,
               pointerEvents: "auto",
+              overflowY: "auto",
             }}
           >
-            <div style={{ minHeight: "100vh", paddingBottom: "10vh" }}>
+            
               <TechStack techStacks={roleData.techStacks} />
-            </div>
+            
           </motion.div>
         </div>
       </div>
