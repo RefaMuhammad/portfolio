@@ -70,7 +70,7 @@ const Footer = ({ theme = "light" }) => {
               <FaGithub />
             </a>
             <a
-              href="www.linkedin.com/in/refa-muhammad"
+              href="https://linkedin.com/in/refa-muhammad"
               target="_blank"
               rel="noreferrer"
               className="icon-box"
