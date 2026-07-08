@@ -99,7 +99,7 @@ const Beranda = () => {
       </section>
 
       {/* SECTION 2: Roles */}
-      <section id="specialized" className="section section-2">
+      <section id="specialized" className="section section-2 section-pinned">
         <div className="section-content">
           <div className="section-inner content-putih">
             <SpecializedRole />
